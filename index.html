@@ -1,0 +1,472 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Bootstrap Example</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+  </head>
+  <style>
+    .my-carousel-img {
+      height: 250px;
+      width: 700px;
+    }
+
+    .ul-liste {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+    .ul-liste ul {
+      display: flex;
+    }
+    .p-el {
+      font-size: 10px;
+    }
+    .my-m1 {
+      max-height: 250px;
+    }
+    .my-m2 img {
+      height: 250px;
+    }
+    .my-m3 {
+      max-height: 250px;
+    }
+    .box3{
+      border: rgb(83, 85, 212) solid 1px;
+      margin: 5px
+    }
+    .my-nav {
+     height: 80px;
+    
+    }
+    .feld1{
+      display: grid;
+      grid-template-columns: 40% 60%;
+      height: 350px;
+    }
+    .box4 img{
+      width: 100px;
+      height: 100px;
+    }
+    .box4{
+      margin-left: 20px;
+    }
+    .box5 img{
+      width: 300px;
+      height: 100px;
+    }
+    .feld2-text{
+     height: 200px;
+    }
+  </style>
+  <body>
+     <!--header  beginn-->
+    <header>
+      <div id="carouselExampleDark" class="carousel carousel-dark slide">
+        <div class="carousel-indicators">
+          <button
+            type="button"
+            data-bs-target="#carouselExampleDark"
+            data-bs-slide-to="0"
+            class="active"
+            aria-current="true"
+            aria-label="Slide 1"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#carouselExampleDark"
+            data-bs-slide-to="1"
+            aria-label="Slide 2"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#carouselExampleDark"
+            data-bs-slide-to="2"
+            aria-label="Slide 3"
+          ></button>
+        </div>
+        <div class="carousel-inner py-5 my-5">
+          <!--Item für erst seite-->
+          <div class="carousel-item active" data-bs-interval="10000">
+            <!--top text-->
+            <div class="content-1-box text-center text-bg-dark">
+              <!--top titel für erst seite-->
+              <div class="top-title">
+                <h5>Seite 1</h5>
+                <p class="p-el">Mit Beschreibung der Seite 1 usw.</p>
+              </div>
+              <!--bild für erst seite-->
+              <img
+                src="https://th.bing.com/th/id/R.4ad5b489621829f3f773d5c83b08d10a?rik=CDs1bgtAYRUeAQ&riu=http%3a%2f%2fwww.staremiejsca.pl%2fzdjecie1946X1X0.jpg&ehk=eAP5IEz9vkik0kfcBvB71P13HfwlLPmaanuXU7LHvUs%3d&risl=&pid=ImgRaw&r=0"
+                alt=""
+                class="my-carousel-img"
+              />
+              <!--bottom für erst seite-->
+              <div class="bottom-title">
+                <h5>mehr information</h5>
+                <p class="p-el"><u>homepadge</u></p>
+                <!--ul liste für erst seite-->
+                <div class="ul-liste text-bg-dark">
+                  <ul class="gap-5">
+                    <li class="list-group-item">1</li>
+                    <li class="list-group-item">2</li>
+                    <li class="list-group-item">3</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!--Item für zweite seite-->
+          <div class="carousel-item" data-bs-interval="2000">
+            <!--top text-->
+            <div class="content-2-box text-center text-bg-dark">
+              <!-- top titel für zweite seite-->
+              <div class="top-title">
+                <h5>Seite 2</h5>
+                <p class="p-el">Mit Beschreibung der Seite 2 usw.</p>
+              </div>
+              <!-- bild für zweite seite-->
+              <img
+                src="https://shop.bokelberg.com/media/image/81/g0/0f/Krefeld_17_800x800@2x.jpg"
+                alt=""
+                class="my-carousel-img"
+              />
+              <!-- bottom für zweite seite-->
+              <div class="bottom-title">
+                <h5>mehr information</h5>
+                <p class="p-el"><u>homepadge</u></p>
+                <!--ul liste für zweite seite-->
+                <div class="ul-liste text-bg-dark">
+                  <ul class="gap-5">
+                    <li class="list-group-item">1</li>
+                    <li class="list-group-item">2</li>
+                    <li class="list-group-item">3</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!--Item für drite seite-->
+          <div class="carousel-item">
+            <!--top text-->
+            <div class="content-3-box text-center text-bg-dark">
+              <!-- top titel für drite seite-->
+              <div class="top-title">
+                <h5>Seite 3</h5>
+                <p class="p-el">Mit Beschreibung der Seite 3 usw.</p>
+              </div>
+              <!-- bild für drite seite-->
+              <img
+                src="https://monovisions.com/wp-content/uploads/2015/06/historic-bw-photo-warsaw-under-russian-partition-in-19th-century-1890s-01-1024x774.jpg"
+                alt=""
+                class="my-carousel-img"
+              />
+              <!-- bottom für drite seite-->
+              <div class="bottom-title">
+                <h3>mehr information</h3>
+                <p class="p-el"><u>homepadge</u></p>
+                <!--ul liste für drite seite-->
+                <div class="ul-liste text-bg-dark">
+                  <ul class="gap-5">
+                    <li class="list-group-item">1</li>
+                    <li class="list-group-item">2</li>
+                    <li class="list-group-item">3</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+         <!--button carousel beginn-->
+
+        <button
+          class="carousel-control-prev"
+          type="button"
+          data-bs-target="#carouselExampleDark"
+          data-bs-slide="prev"
+        >
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button
+          class="carousel-control-next"
+          type="button"
+          data-bs-target="#carouselExampleDark"
+          data-bs-slide="next"
+        >
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+       <!--button carousel ende-->
+    </header>
+    <!--header  ende-->
+    <!--main  beginn-->
+    <main>
+      <!--main box1 beginn-->
+      <div class="box1">
+        <!--main box1 row-->
+        <div class="row mt-3 bg-primary my-2">
+          <!--main box1 col 8-->
+          <div class="col-sm-8 overflow-auto my-m1">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi
+            corporis iste repellat corrupti. Molestias, maiores facere iste
+            quaerat laudantium non nobis ipsam cupiditate minima ipsum
+            aspernatur. Recusandae ipsa eaque quos! Lorem ipsum dolor sit amet
+            consectetur adipisicing elit. Quasi corporis iste repellat corrupti.
+            Molestias, maiores facere iste quaerat laudantium non nobis ipsam
+            cupiditate minima ipsum aspernatur. Recusandae ipsa eaque quos!
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eveniet,
+            ut nobis in non libero cupiditate cum distinctio voluptatem. Esse
+            sunt atque fugiat, molestiae consectetur natus sed voluptate
+            temporibus quo corrupti repellendus omnis voluptas provident! Dicta
+            a reiciendis voluptate quaerat eaque! Illum eveniet, optio officia
+            sint consectetur minima asperiores ad assumenda id animi repudiandae
+            amet quidem. Fuga obcaecati iusto ipsam in, adipisci reprehenderit
+            inventore laudantium sed nobis doloremque sequi culpa neque
+            consectetur consequatur ab saepe commodi fugiat recusandae quod
+            asperiores quae dolores aut excepturi? Esse repudiandae cum placeat
+            quaerat aspernatur, hic dolor commodi distinctio. Tenetur atque odit
+            eum nisi distinctio eius?
+          </div>
+           <!--main box1 col 4-->
+          <div class="col-sm-4 overflow-hidden my-m2">
+            <img
+              src="https://th.bing.com/th/id/R.f2d99261aca2b5f0f20b7f78261d7672?rik=xOd3zMouGHnIsQ&riu=http%3a%2f%2fwww.tourismusweltweit.de%2fgallery%2f43b53dc6c1e14529e0516ded8a6492b0%2fimg2.jpg&ehk=4cO7yLs1boS2sPrM0m%2f%2bN7jCQXELN%2fdAVRv9%2fx4aUL8%3d&risl=&pid=ImgRaw&r=0"
+              alt=""
+            />
+          </div>
+        </div>
+      </div>
+        <!--main box1 ende-->
+        <!--main box2 beginn-->
+        <div class="box2">
+           <!--main box2 row-->
+        <div class="row mt-3 bg-primary">
+          <!--main box2 col 4-->
+          <div class="col-sm-4 overflow-hidden my-m2">
+            <img
+              src="https://th.bing.com/th/id/OIP.tUCy5VaB-u5QXnRQLVeyhgHaFj?pid=ImgDet&rs=1"
+              alt=""
+            />
+          </div>
+           <!--main box2 col 4-->
+          <div class="col-sm-4 overflow-auto my-m3">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi
+            corporis iste repellat corrupti. Molestias, maiores facere iste
+            quaerat laudantium non nobis ipsam cupiditate minima ipsum
+            aspernatur. Recusandae ipsa eaque quos! Lorem ipsum dolor sit amet
+            consectetur adipisicing elit. Quasi corporis iste repellat corrupti.
+            Molestias, maiores facere iste quaerat laudantium non nobis ipsam
+            cupiditate minima ipsum aspernatur. Recusandae ipsa eaque quos!
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates
+            soluta odio obcaecati hic exercitationem dignissimos enim cumque,
+            ipsum dolorum laudantium, sint officia nam esse placeat tempore
+            voluptatem quaerat, id tenetur! Officiis quasi rem vero a blanditiis
+            corrupti tempora, deleniti quod iste quaerat ex magnam pariatur
+            culpa voluptatem necessitatibus consectetur reprehenderit ipsum
+            ducimus. Voluptatum magnam perferendis totam dolores minima
+            repellendus maxime inventore ex, esse, explicabo, exercitationem
+            voluptates harum repellat eum dolor quisquam. Quaerat amet vero
+            alias est illo quasi veritatis, saepe, possimus fugit, quis magni
+            aliquid eligendi praesentium cum impedit tempora? Similique minima
+            amet quod, numquam optio commodi? Autem, iusto reprehenderit. Lorem
+            ipsum dolor sit amet consectetur adipisicing elit. Unde est id, et
+            voluptatibus facere temporibus tempora architecto quidem possimus
+            dolorum nulla, recusandae ducimus consequuntur consectetur. Cum
+            ipsam quidem adipisci accusamus temporibus! Ex fuga rerum, dicta
+            fugiat voluptates exercitationem. Expedita minima cum tempora,
+            consectetur cumque assumenda, non quasi delectus quibusdam rem optio
+            blanditiis qui voluptate, sit doloremque error autem tempore facere
+            laudantium dolorum? Dolorum hic facere nostrum amet placeat
+            consectetur. Officiis illum rerum omnis asperiores ex atque quidem
+            harum veritatis necessitatibus accusamus. Fuga labore animi a sed,
+            illo voluptatum quis rerum ut, nihil ipsum libero id, cumque enim
+            accusantium culpa eos!
+          </div>
+           <!--main box2 col 4-->
+          <div class="col-sm-4 overflow-hidden my-m2">
+            <img
+              src="https://www.staedte-fotos.de/1200/trutnov--trautenau-kaiser-josef-83234.jpg"
+              alt=""
+            />
+          </div>
+        </div>
+       </div>
+      </div>
+      <!--main box2 ende-->
+       <!--main feld1 box3 und box4 elhalten beginn-->
+       <div class="feld1 row mt-3 ">
+      <!--main box3 beginn-->
+      <div class="box3 bg-primary">
+        <!--main box3 nav-->
+        <div class="container mt-3 my-nav">
+          <h2>Nav</h2>
+          <p>offcanvas</p>
+          <!--main box3 ul-->
+          <ul class="nav flex-column">
+             <!--main box3 li bild-->
+            <li class="nav-item">
+              <a class="nav-link" href="#"><img src="lo.png" alt="" /></a>
+            </li>
+             <!--main box3 li text-->
+            <li class="nav-item">
+              <div class="col-sm-4 overflow-auto my-nav">
+                <a class="nav-link" href="#"
+                  >Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Animi, quisquam voluptatum. Omnis, delectus? Dignissimos
+                  aliquam ipsa illo ex fugiat tempore aut consectetur obcaecati.
+                  Odit quasi delectus ad enim, architecto dolor?Lorem ipsum
+                  dolor sit amet consectetur adipisicing elit. Animi, quisquam
+                  voluptatum. Omnis, delectus? Dignissimos aliquam ipsa illo ex
+                  fugiat tempore aut consectetur obcaecati. Odit quasi delectus
+                  ad enim, architecto dolor?Lorem ipsum dolor sit amet
+                  consectetur adipisicing elit. Animi, quisquam voluptatum.
+                  Omnis, delectus? Dignissimos aliquam ipsa illo ex fugiat
+                  tempore aut consectetur obcaecati. Odit quasi delectus ad
+                  enim, architecto dolor?</a
+                >
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <!--main box3 ende-->
+      <!--main box4 beginn-->
+      <div class="box4 bg-primary">
+          <div class="col-sm-8 p-3  text-white">
+               <!--main box4 accordion beginn-->
+              <div class="accordion" id="accordionExample">
+                <div class="accordion-item">
+                  <h2 class="accordion-header">
+                    <button
+                      class="accordion-button"
+                      type="button"
+                      data-bs-toggle="collapse"
+                      data-bs-target="#collapseOne"
+                      aria-expanded="true"
+                      aria-controls="collapseOne"
+                    >
+                     <!--main box4 accordion item 1 -->
+                      Accordion Item #1
+                    </button>
+                  </h2>
+                  <div
+                    id="collapseOne"
+                    class="accordion-collapse collapse show"
+                    data-bs-parent="#accordionExample"
+                  >
+                   <!--main box4 accordion-body item 1 -->
+                    <div class="accordion-body">
+                      <strong>klimawandel</strong>
+                      Elf Organisationen, ein Bündnis - für eine effektive Nothilfe bei Katastrophen & Krisen. Hilfe, die garantiert ankommt. Unterstützen Sie jetzt unsere Arbeit mit Ihrer Spende!<pr/>
+                      <img src="https://s.w-x.co/de-wetterbedrohungen-extreme-klimawandel.jpg"/>
+                    </div>
+                  </div>
+                </div>
+                <div class="accordion-item">
+                  <h2 class="accordion-header">
+                    <button
+                      class="accordion-button collapsed"
+                      type="button"
+                      data-bs-toggle="collapse"
+                      data-bs-target="#collapseTwo"
+                      aria-expanded="false"
+                      aria-controls="collapseTwo"
+                    >
+                    <!--main box4 accordion item 2 -->
+                      Accordion Item #2
+                    </button>
+                  </h2>
+                  <div
+                    id="collapseTwo"
+                    class="accordion-collapse collapse"
+                    data-bs-parent="#accordionExample"
+                  >
+                  <!--main box4 accordion-body item 2 -->
+                    <div class="accordion-body">
+                      <strong>klima wikibedia</strong>
+                      <p>Klimawandel, auch Klimaveränderung, Klimaänderung oder Klimawechsel,
+                         ist eine weltweit auftretende Veränderung des Klimas 
+                         auf der Erde oder erdähnlichen Planeten oder Monden, die eine Atmosphäre besitzen. Die mit einem Klimawandel verbundene Abkühlung oder Erwärmung kann über</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="accordion-item">
+                  <h2 class="accordion-header">
+                    <button
+                      class="accordion-button collapsed"
+                      type="button"
+                      data-bs-toggle="collapse"
+                      data-bs-target="#collapseThree"
+                      aria-expanded="false"
+                      aria-controls="collapseThree"
+                    >
+                    <!--main box4 accordion item 3 -->
+                      Accordion Item #3
+                    </button>
+                  </h2>
+                  <div
+                    id="collapseThree"
+                    class="accordion-collapse collapse"
+                    data-bs-parent="#accordionExample"
+                  >
+                  <!--main box4 accordion-body item 3 -->
+                    <div class="accordion-body">
+                      <strong>klima wikibedia.</strong>
+                      <p>Der Klimawandel bringt, wie oben dargelegt, weitreichende negative Folgen in allen …
+
+                          Autor: Bundeszentrale Für Politische Bildung
+                          </p>
+                          <img src="https://www.zdf.de/assets/gluehende-erde-vor-rauchenden-schornsteinen-klimawandel-100~1280x720?cb=1572256009131"/>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+      </div>
+       <!--main box4 accordion ende-->
+      <!--main box3 ende-->
+    </div>
+      <!--main feld1 box2 und box3 elhalten ende-->
+    </main>
+    <footer class="feld2 mt-5">
+      <div class="box5">
+        <div class="row ">
+          <!--Column 1-->
+            <div class="col overflow-auto feld2-text bg-primary" data-bs-toggle="popover" title="klimawandel text" data-bs-content="Pop Content Text unter header"> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorem minima, molestias quibusdam nisi ipsum quam vel quos omnis sit odit vero praesentium consectetur ab commodi officiis quasi maxime veniam maiores! Lorem, ipsum dolor sit amet consectetur adipisicing elit. Illo delectus in, ab excepturi maxime doloribus quibusdam hic ut libero cumque ducimus minus accusantium dignissimos dolorum magnam sit, distinctio ipsam totam! Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo dignissimos repellat illo, quidem autem unde maxime, vero quod expedita animi, sapiente ipsa? Placeat accusantium temporibus esse autem voluptates, nemo iure!</div>
+            <!--Column 2-->
+            <div class="col d-flex flex-column overflow-hidden ">
+              <!--Bild 1-->
+              <div class="f1  mb-1">
+               <img src="https://blogs.tu-ilmenau.de/klima/files/2019/06/Allgemein-Was-ist-Klimawandel.jpg" alt="" data-bs-toggle="popover" title="klimawandel erde" data-bs-content="Some content inside the popover">
+              </div>
+              <!--Bild 2-->
+              <div class="f2 ">
+               <img src="https://th.bing.com/th/id/R.4ac5f03507c6531c6a60d047fd6c3404?rik=UC1xJ9r5dgg10g&riu=http%3a%2f%2fspiritismaustralia.com.au%2fwp-content%2fuploads%2f2020%2f09%2f12694836_1764081640490043_9161046819740946914_o-1-768x576.jpg&ehk=htUgJYhCi3%2f2yzj6PKez4PgxAaN7VTRLTQhquuk7xmo%3d&risl=&pid=ImgRaw&r=0" alt="" data-bs-toggle="popover" title="klima Erde" data-bs-content="Some content inside the popover">
+              </div>
+            </div>
+         
+        </div>
+      </div>
+    </footer>
+    <script>
+    const popoverTriggerList = document.querySelectorAll('[data-bs-toggle="popover"]')
+const popoverList = [...popoverTriggerList].map(popoverTriggerEl => new bootstrap.Popover(popoverTriggerEl))
+</script>
+
+  </body>
+</html>
